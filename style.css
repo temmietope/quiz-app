@@ -1,0 +1,35 @@
+.container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid violet;
+    margin: 180px;
+}
+.contents{
+    text-align: center;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 30px;
+    padding-bottom: 30px;
+     
+}
+h2{
+    color: mediumvioletred;
+}
+#theOptions{
+    text-align: left;
+    padding: 20px
+}
+input[type='radio']{
+    align-items: right !important;
+    margin-top: 15px;
+}
+.btn{
+    background-color: white;
+    color: mediumvioletred;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid violet;
+
+}
