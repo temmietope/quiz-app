@@ -9,37 +9,31 @@
   </head>
   <body>
     <div class="container" id="quizContainer">
-     
-        <h2>QUIZ</h2>
-        <p>Select the most appropriate option</p>
+      <h2>QUIZ</h2>
+      <p>Select the most appropriate option</p>
 
-        <div class="question" id="question"></div>
-        <div class="options">
-          <label class="option"><input type="radio" name="option" value="1"><span id="opt1"></span></label>
-          <label class="option"><input type="radio" name="option" value="2"><span id="opt2"></span></label>
-          <label class="option"><input type="radio" name="option" value="3"><span id="opt3"></span></label>
-          <label class="option"><input type="radio" name="option" value="4"><span id="opt4"></span></label>
-        </div>
-        <div class="nextButton">
-          <button class="btn" id="nextbtn">Next</button>
-        </div>
-        <div class="result container" id="result" style="display:none;"></div>
-        <!-- <div class="questionDiv">
-          <h4 id="questionHeader"></h4>
-          <p id="theQuestion">
-           
-          </p>
-          <div id="theOptions">
-           
-          </div>
-
-          <div class="nextButton">
-            <button class="btn">NEXT</button>
-          </div>
-        </div>
-       -->
+      <div class="question" id="question"></div>
+      
+        <label class="option"
+          ><input type="radio" name="option" value="1"/><span id="opt1"></span
+        ></label>
+        <label class="option"
+          ><input type="radio" name="option" value="2"/><span id="opt2"></span
+        ></label>
+        <label class="option"
+          ><input type="radio" name="option" value="3"/><span id="opt3"></span
+        ></label>
+        <label class="option"
+          ><input type="radio" name="option" value="4"/><span id="opt4"></span
+        ></label>
+    
+      <div class="nextButton">
+        <button class="btn" id="nextbtn">Next</button>
+        <button class="btn" id="finalbtn" style="display: none">Finish</button>
+      </div>
+      <div class="result container" id="result" style="display:none;"></div>
     </div>
-    <script src='questions.js'></script>
+    <script src="questions.js"></script>
     <script src="index.js"></script>
   </body>
 </html>

@@ -1,63 +1,67 @@
-.container{
-    height: 300px;
-    width: 1000px;
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    transform: translateX(-50%) translateY(-50%);
-    /* display: flex;
+body {
+  width: 100%;
+}
+
+.container {
+  height: 300px;
+  width: 1000px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%) translateY(-50%);
+  /* display: flex;
     align-items: center;
     justify-content: center; */
-    border: 1px solid violet;
-    
-    /* margin: 180px; */
-    text-align: center;
-    margin: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 30px;
-    
+  border: 1px solid violet;
+
+  /* margin: 180px; */
+  text-align: center;
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 30px;
 }
 
-h2{
-    color: mediumvioletred;
+h2 {
+  color: mediumvioletred;
 }
-.question{
-    background-color: mediumvioletred;
-    color: white;
-    padding: 10px;
-    margin: 10px 0px 10px 0px;
+.question {
+  background-color: mediumvioletred;
+  color: white;
+  padding: 10px;
+  margin: 10px 0px 10px 0px;
+}
+.option {
+  display: inline-block;
+  text-align: left;
+  padding: 10px 0px 10px 15px;
+  width: 450px;
+  background-color: violet;
+  color: white;
+  vertical-align: middle;
+  margin: 7px;
+  border-radius: 20px;
+}
+.option:hover {
+  background-color: white;
+  color: violet;
+}
 
+.option input:checked .option {
+  background-color: white;
+  color: mediumvioletred;
 }
-.option{
-    display: inline-block;
-    text-align: left;
-    padding: 10px 0px 10px 15px;
-    width: 450px;
-    background-color: violet;
-    color: white;
-    vertical-align: middle;
-    margin: 7px;
-    border-radius: 20px;
-}
-.option:hover{
-    background-color: white;
-    color: violet;
 
+.btn {
+  background-color: mediumvioletred;
+  color: white;
+  font-size: 20px;
+  padding: 5px;
+  margin: 10px;
+  text-align: center;
+  border: 1px solid violet;
+  border-radius: 10px;
 }
-.option input:checked .option{
-    background-color: white;
-    color: violet;
-
-}
-.btn{
-    background-color: white;
-    color: mediumvioletred;
-    font-size: 20px;
-    text-align: center;
-    border: 1px solid violet;
-
-}
-.btn:hover{
-    background-color: violet;
-    color: white;
+.btn:hover {
+  background-color: violet;
+  color: white;
 }
