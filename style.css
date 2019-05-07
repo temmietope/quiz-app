@@ -20,6 +20,14 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding: 30px;
 }
+#result  {
+  text-align: center;
+  font-size: 50px;
+  position: relative;
+  transform: translateX(-50%) translateY(-50%);
+  top: 50%;
+  left: 50%;
+}
 
 h2 {
   color: mediumvioletred;
@@ -46,9 +54,9 @@ h2 {
   color: violet;
 }
 
-.option input:checked .option {
-  background-color: white;
-  color: mediumvioletred;
+.option input:checked ~ .opt1 {
+  background-color: mediumvioletred;
+  color: white;
 }
 
 .btn {

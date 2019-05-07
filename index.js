@@ -3,6 +3,7 @@ var score = 0;
 var totalQuestion = questions.length;
 
 var quizContainer = document.querySelector("#quizContainer");
+var questionArea = document.querySelector("#questionArea")
 var theQuestion = document.querySelector("#question");
 var opt1 = document.querySelector("#opt1");
 var opt2 = document.querySelector("#opt2");
@@ -28,7 +29,7 @@ function loadNextQuestion() {
 
   for (var i = 0, radioLength = radios.length; i < radioLength; i++) {
     if (radios[i].checked) {
-      
+     
       console.log(radios[i].value);
       console.log(correctAnswer);
 
@@ -43,9 +44,17 @@ function loadNextQuestion() {
 }
 
 function loadResult() {
-  quizContainer.style.display = "none";
+  questionArea.style.display = "none";
   resultContainer.style.display = "block";
-  resultContainer.textContent = `Your score is ${score} / 3`;
+ 
+  if (score <= 0.6*totalQuestion){
+    resultContainer.innerHTML = `Your score is ${score} / ${totalQuestion} </br>
+    <bold>This is not impressive</bold>`;
+  };
+  if (score > 0.6*totalQuestion){
+    resultContainer.innerHTML = `Your score is ${score} / ${totalQuestion} </br>
+    <bold>Awesome</bold>`;
+  };
   console.log(score);
 }
 
@@ -59,5 +68,6 @@ nextbtn.onclick = function() {
     finalbtn.style.display = "";
   }
 
-  finalbtn.onclick = loadResult;
+  
 };
+finalbtn.onclick = loadResult;
