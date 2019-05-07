@@ -37,6 +37,7 @@ function loadNextQuestion() {
         console.log("correct answer");
         score += 1;
       }
+      radios[i].checked = false;
       currentQuestion += 1;
       loadQuestion(currentQuestion);
     }
