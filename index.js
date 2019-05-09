@@ -1,20 +1,20 @@
-var currentQuestion = 0;
-var score = 0;
-var totalQuestion = questions.length;
+let currentQuestion = 0;
+let score = 0;
+let totalQuestion = questions.length;
 
-var quizContainer = document.querySelector("#quizContainer");
-var questionArea = document.querySelector("#questionArea")
-var theQuestion = document.querySelector("#question");
-var opt1 = document.querySelector("#opt1");
-var opt2 = document.querySelector("#opt2");
-var opt3 = document.querySelector("#opt3");
-var opt4 = document.querySelector("#opt4");
-var nextbtn = document.querySelector("#nextbtn");
-var finalbtn = document.querySelector("#finalbtn");
-var resultContainer = document.querySelector("#result");
+const quizContainer = document.querySelector("#quizContainer");
+const questionArea = document.querySelector("#questionArea")
+const theQuestion = document.querySelector("#question");
+const opt1 = document.querySelector("#opt1");
+const opt2 = document.querySelector("#opt2");
+const opt3 = document.querySelector("#opt3");
+const opt4 = document.querySelector("#opt4");
+const nextbtn = document.querySelector("#nextbtn");
+const finalbtn = document.querySelector("#finalbtn");
+const resultContainer = document.querySelector("#result");
 
 function loadQuestion(questionIndex) {
-  var q = questions[questionIndex];
+  let q = questions[questionIndex];
   theQuestion.innerHTML = `${questionIndex + 1}. ${q.question}`;
   opt1.innerHTML = q.options[0];
   opt2.innerHTML = q.options[1];
@@ -27,7 +27,7 @@ function loadNextQuestion() {
   let radios = document.querySelectorAll("input[name='option']");
   let correctAnswer = questions[currentQuestion].answer;
 
-  for (var i = 0, radioLength = radios.length; i < radioLength; i++) {
+  for (let i = 0, radioLength = radios.length; i < radioLength; i++) {
     if (radios[i].checked) {
      
       console.log(radios[i].value);
