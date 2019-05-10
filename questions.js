@@ -25,7 +25,7 @@ const questions=[
     },
     {
         "id":3,
-        "question":"Who stated the Operation Feed the Nation?",
+        "question":"Who started the Operation Feed the Nation?",
         "options":["Lere Paimo", "Gen. Olusegun Obasanjo","David Adeleke", "Obafemi Awolowo"],
         "answer": 0
     },
