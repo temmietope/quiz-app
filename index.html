@@ -4,40 +4,50 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css" />
     <title>Quiz app</title>
   </head>
   <body>
-    <div class="container col-sm-12" id="quizContainer">
-      <div class="questionArea" id="questionArea">
-        <h2>QUIZ</h2>
-        <p>Select the most appropriate option</p>
+    <div class="container" id="quizContainer">
+      <div class="flexContainer">
+        <div class="questionArea" id="questionArea">
+          <div>
+            <h2>QUIZ</h2>
+            <p>Select the most appropriate option</p>
+          </div>
+          <div class="question" id="question"></div>
 
-        <div class="question" id="question"></div>
-
-        <label class="option"
-          ><input type="radio" name="option" value="1"/> <span id="opt1"></span
-        ></label>
-        <label class="option"
-          ><input type="radio" name="option" value="2"/><span id="opt2"></span
-        ></label>
-        <label class="option"
-          ><input type="radio" name="option" value="3"/><span id="opt3"></span
-        ></label>
-        <label class="option"
-          ><input type="radio" name="option" value="4"/><span id="opt4"></span
-        ></label>
-
-        <div class="nextButton">
-          <button class="btn" id="nextbtn">Next</button>
-          <button class="btn" id="finalbtn" style="display: none">
-            Finish
-          </button>
+          <div class="optionFlexContainer">
+            <label class="option"
+              ><input type="radio" name="option" value="1"/>
+              <span id="opt1"></span
+            ></label>
+            <label class="option"
+              ><input type="radio" name="option" value="2"/><span
+                id="opt2"
+              ></span
+            ></label>
+            <label class="option"
+              ><input type="radio" name="option" value="3"/><span
+                id="opt3"
+              ></span
+            ></label>
+            <label class="option"
+              ><input type="radio" name="option" value="4"/><span
+                id="opt4"
+              ></span
+            ></label>
+          </div>
+          <div class="nextButton">
+            <button class="btn" id="nextbtn">Next</button>
+            <button class="btn" id="finalbtn" style="display: none">
+              Finish
+            </button>
+          </div>
         </div>
-      </div>
-      <div class="result container" id="result" style="display:none;">
-        <span class="resultDetails"></span>
+        <div class="result" id="result" style="display:none;">
+          <span></span>
+        </div>
       </div>
     </div>
     <script src="questions.js"></script>
