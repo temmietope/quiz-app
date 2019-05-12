@@ -1,75 +1,113 @@
-body {
-  width: 100%;
-}
-
 .container {
-  height: 300px;
-  width: 1000px;
-  top: 50%;
-  left: 50%;
-  position: absolute;
-  transform: translateX(-50%) translateY(-50%);
-  /* display: flex;
-    align-items: center;
-    justify-content: center; */
-  border: 1px solid violet;
-
-  /* margin: 180px; */
-  text-align: center;
-  margin: 0;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1000px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  padding: 30px;
 }
-#result  {
-  text-align: center;
-  font-size: 50px;
-  position: relative;
-  transform: translateX(-50%) translateY(-50%);
-  top: 50%;
-  left: 50%;
+.flexContainer {
+  display: flex;
+  height: 100vh;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
+.questionArea {
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 400px;
+  width: 1000px;
+  border: 1px solid violet;
+  padding: 15px;
+  margin: 0 auto;
+}
 h2 {
   color: mediumvioletred;
+  text-align: center;
+  margin: 0;
+}
+p {
+  text-align: center;
 }
 .question {
+  width: 80%;
   background-color: mediumvioletred;
+  border-radius: 20px;
   color: white;
   padding: 10px;
   margin: 10px 0px 10px 0px;
+  text-align: center;
+}
+.optionFlexContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 80%;
 }
 .option {
-  display: inline-block;
-  text-align: left;
-  padding: 10px 0px 10px 15px;
-  width: 450px;
+  flex: 1 1 40%;
   background-color: violet;
   color: white;
-  vertical-align: middle;
   margin: 7px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-radius: 20px;
 }
 .option:hover {
   background-color: white;
   color: violet;
 }
-
-.option input:checked ~ .opt1 {
-  background-color: mediumvioletred;
-  color: white;
+#result {
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 400px;
+  width: 1000px;
+  border: 1px solid violet;
+  padding: 15px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 50px;
+  border: 1px solid violet;
+  padding: 15px;
 }
-
+.nextButton {
+  display: flex;
+  justify-content: center;
+}
 .btn {
   background-color: mediumvioletred;
   color: white;
   font-size: 20px;
   padding: 5px;
-  margin: 10px;
+  margin-top: 10px;
   text-align: center;
   border: 1px solid violet;
   border-radius: 10px;
+  justify-content: center;
 }
 .btn:hover {
   background-color: violet;
   color: white;
+}
+@media screen and (max-width: 768px) {
+  .optionFlexContainer {
+    display: flex;
+    flex-flow: column;
+    box-sizing: border-box;
+  }
+  .option {
+    flex: 1;
+    background-color: violet;
+    color: white;
+    margin: 7px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+  }
 }
