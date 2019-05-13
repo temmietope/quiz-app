@@ -1,7 +1,7 @@
 .container {
   width: 100%;
   margin: 0 auto;
-  max-width: 1000px;
+  /* max-width: 1000px; */
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .flexContainer {
@@ -15,13 +15,13 @@
 .questionArea {
   display: flex;
   flex-wrap: wrap;
-  flex-flow: column;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-basis: 400px;
-  width: 1000px;
+  flex-basis: 60vh;
+  width: 80%;
   border: 1px solid violet;
-  padding: 15px;
+  padding: 1vh;
   margin: 0 auto;
 }
 h2 {
@@ -35,10 +35,10 @@ p {
 .question {
   width: 80%;
   background-color: mediumvioletred;
-  border-radius: 20px;
+  border-radius: 1.2rem;
   color: white;
-  padding: 10px;
-  margin: 10px 0px 10px 0px;
+  padding: 1vh;
+  margin: 3vh 0vh 3vh 0vh;
   text-align: center;
 }
 .optionFlexContainer {
@@ -51,10 +51,10 @@ p {
   flex: 1 1 40%;
   background-color: violet;
   color: white;
-  margin: 7px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-radius: 20px;
+  margin: 1vh;
+  padding-top: 1.2vh;
+  padding-bottom: 1.2vh;
+  border-radius: 1.2rem;
 }
 .option:hover {
   background-color: white;
@@ -66,8 +66,8 @@ p {
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  flex-basis: 400px;
-  width: 1000px;
+  flex-basis: 60vh;
+  width: 80%;
   border: 1px solid violet;
   padding: 15px;
   margin: 0 auto;
@@ -88,7 +88,7 @@ p {
   margin-top: 10px;
   text-align: center;
   border: 1px solid violet;
-  border-radius: 10px;
+  border-radius: 0.8rem;
   justify-content: center;
 }
 .btn:hover {
@@ -98,6 +98,7 @@ p {
 @media screen and (max-width: 768px) {
   .optionFlexContainer {
     display: flex;
+    flex-wrap: wrap;
     flex-flow: column;
     box-sizing: border-box;
   }
@@ -105,9 +106,9 @@ p {
     flex: 1;
     background-color: violet;
     color: white;
-    margin: 7px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 20px;
+    margin: 1vh;
+    padding-top: 1.2vh;
+    padding-bottom: 1.2vh;
+    border-radius: 1rem;
   }
 }
